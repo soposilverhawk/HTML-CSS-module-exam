@@ -212,7 +212,7 @@ h1 {
 }
 
 .section-1 {
-  margin-top: 70px;
+  margin: 70px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -240,4 +240,11 @@ p {
 .section-1-hero-container,
 .section-1-hero-container img {
   height: 100%;
+}
+
+.sponsors-container ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
 }/*# sourceMappingURL=main.css.map */
