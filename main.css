@@ -141,7 +141,6 @@ a {
 .container {
   max-width: 1440px;
   width: 100%;
-  height: 100vh;
   margin: 0 auto;
   padding: 60px 100px 50px 100px;
 }
@@ -190,6 +189,17 @@ h1 {
   width: 100%;
 }
 
+.btn {
+  padding: 20px 35px;
+  background-color: #191A23;
+  font-size: 20px;
+  line-height: 28px;
+  border-radius: 14px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
 #quote-btn {
   padding: 20px 35px;
   background-color: #fff;
@@ -199,4 +209,35 @@ h1 {
   color: #000;
   border: 1px solid #191A23;
   cursor: pointer;
+}
+
+.section-1 {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  height: 515px;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+p {
+  font-size: 18px;
+}
+
+.section-1-description {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.section-1-hero-container,
+.section-1-hero-container img {
+  height: 100%;
 }/*# sourceMappingURL=main.css.map */

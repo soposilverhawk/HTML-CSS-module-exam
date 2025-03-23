@@ -5,7 +5,6 @@
 .container {
   max-width: 1440px;
   width: 100%;
-  height: 100vh;
   margin: 0 auto;
   padding: 60px 100px 50px 100px;
 }
@@ -48,10 +47,33 @@ h1 {
     width: 100%;
   }
 }
+.btn {
+    @include button();
+}
 #quote-btn {
   @include button(
     $bg-color: #fff,
     $color: #000,
     $border: 1px solid $secondary-color
   );
+}
+.section-1 {
+    margin-top: 70px;
+    @include flex();
+    height: 515px;
+}
+h2 {
+    font-size: $desktop-h1-fs;
+}
+p {
+    font-size: $desktop-p-fs;
+}
+.section-1-description {
+    width: 40%;
+    height: 100%;
+    @include flex($direction: column, $justify: space-evenly, $align: flex-start)
+}
+.section-1-hero-container,
+.section-1-hero-container img {
+    height: 100%;
 }
