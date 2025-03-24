@@ -84,12 +84,14 @@ p {
 .sponsors-container ul {
     @include flex();
 }
-.section-2 {
+.section-2,
+.section-4 {
     margin: 140px 0 100px 0;
     @include flex($direction: column, $justify: space-between, $align: flex-start);
     gap: 80px;
 }
-.section-2-description {
+.section-2-description,
+.section-4-description {
     @include flex();
     gap: 40px;
 }
@@ -156,4 +158,27 @@ h4 {
   border-radius: 45px;
   background-color: $tertiary-color;
   padding-left: 60px;
+  margin-bottom: 140px;
+}
+.section-4-cards-container {
+  height: 250px;
+  padding: 70px 60px;
+  background-color: $secondary-color;
+  border-radius: 45px;
+  @include flex();
+  color: #fff;
+  gap: 64px;
+}
+.section-4-learn-more-container {
+  color: $primary-color;
+  @include flex($direction: row, $justify: flex-start, $align: center);
+  gap: 15px;
+}
+.section-4-card {
+  @include flex($direction: column, $justify: space-evenly, $align: flex-start);
+  height: 50%;
+}
+.section-4-card:not(:last-child) {
+  border-right: 1px solid #fff;
+  padding-right: 64px;
 }
