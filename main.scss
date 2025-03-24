@@ -80,3 +80,71 @@ p {
 .sponsors-container ul {
     @include flex();
 }
+.section-2 {
+    margin: 140px 0 100px 0;
+    height: 1141px;
+    @include flex($direction: column, $justify: space-between, $align: flex-start);
+}
+.section-2-description {
+    @include flex();
+    gap: 40px;
+}
+.section-2-cards-container {
+    height: 88.5%;
+    width: 100%;
+    @include flex();
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 40px;
+}
+.section-2-card {
+    width: 600px;
+    height: 310px;
+    border: 1px solid $secondary-color;
+    padding: 50px;
+    border-radius: 45px;
+    box-shadow: 0 5px 0 0 $secondary-color;
+    @include flex();
+}
+.card-description-container,
+.card-img-container {
+    height: 60%;
+}
+.card-img-container {
+    @include flex($direction: row, $justify: center, $align: center)
+}
+.card-description-container {
+    @include flex($direction: column, $justify: space-between, $align: flex-start);
+}
+.learn-more-container {
+    @include flex();
+    gap: 7px;
+}
+h3 {
+    font-size: $desktop-h2-fs;
+    background-color: $primary-color;
+    display: inline-block;
+}
+h4 {
+    font-size: $desktop-h3-fs;
+    padding: 5px;
+}
+.tertiary-card {
+  background-color: $tertiary-color;
+}
+.tertiary-card h4 {
+  background-color: $primary-color;
+}
+.primary-card {
+  background-color: $primary-color;
+}
+.secondary-card {
+  background-color: $secondary-color;
+}
+.secondary-card p {
+  color: #fff;
+}
+.primary-card h4,
+.secondary-card h4 {
+  background-color: #fff;
+}
