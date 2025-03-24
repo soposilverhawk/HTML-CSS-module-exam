@@ -254,7 +254,8 @@ p {
 }
 
 .section-2,
-.section-4 {
+.section-4,
+.section-5 {
   margin: 140px 0 100px 0;
   display: flex;
   justify-content: space-between;
@@ -264,7 +265,8 @@ p {
 }
 
 .section-2-description,
-.section-4-description {
+.section-4-description,
+.section-5-description {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -401,4 +403,66 @@ h4 {
 .section-4-card:not(:last-child) {
   border-right: 1px solid #fff;
   padding-right: 64px;
+}
+
+.section-5-FAQ-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.FAQ {
+  width: 100%;
+  background-color: #F3F3F3;
+  padding: 60px 41px;
+  border-radius: 45px;
+  border: 1px solid #191A23;
+  box-shadow: 0 5px 0 0 #191A23;
+}
+
+.FAQ-header,
+.FAQ-number-and-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.FAQ-number-and-title {
+  gap: 25px;
+  font-weight: bold;
+}
+
+.FAQ-numeration {
+  font-size: 60px;
+}
+
+.FAQ-number-and-title p {
+  font-size: 38px;
+}
+
+.FAQ-toggle-btn {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+.FAQ-content {
+  margin-top: 30px;
+}
+
+.FAQ-expanded .FAQ-header {
+  border-bottom: 1px solid #191A23;
+  padding: 30px 0;
+}
+
+.FAQ-expanded {
+  background-color: #B9FF66;
 }/*# sourceMappingURL=main.css.map */

@@ -85,13 +85,15 @@ p {
     @include flex();
 }
 .section-2,
-.section-4 {
+.section-4,
+.section-5 {
     margin: 140px 0 100px 0;
     @include flex($direction: column, $justify: space-between, $align: flex-start);
     gap: 80px;
 }
 .section-2-description,
-.section-4-description {
+.section-4-description,
+.section-5-description {
     @include flex();
     gap: 40px;
 }
@@ -181,4 +183,47 @@ h4 {
 .section-4-card:not(:last-child) {
   border-right: 1px solid #fff;
   padding-right: 64px;
+}
+.section-5-FAQ-container {
+  @include flex($direction: column, $justify: space-between, $align: flex-start);
+  gap: 30px;
+}
+.FAQ {
+  width: 100%;
+  background-color: $tertiary-color;
+  padding: 60px 41px;
+  border-radius: 45px;
+  border: 1px solid $secondary-color;
+  box-shadow: 0 5px 0 0 $secondary-color
+}
+.FAQ-header,
+.FAQ-number-and-title {
+  @include flex();
+}
+.FAQ-number-and-title {
+  gap: 25px;
+  font-weight: bold;
+}
+.FAQ-numeration {
+  font-size: $desktop-h1-fs;
+}
+.FAQ-number-and-title p {
+  font-size: 38px;
+}
+.FAQ-toggle-btn {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  @include flex($direction: row, $justify: center, $align: center);
+  cursor: pointer;
+}
+.FAQ-content {
+  margin-top: 30px;
+}
+.FAQ-expanded .FAQ-header {
+  border-bottom: 1px solid $secondary-color;
+  padding: 30px 0;
+}
+.FAQ-expanded {
+  background-color: $primary-color;
 }
