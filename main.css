@@ -211,7 +211,8 @@ h1 {
   cursor: pointer;
 }
 
-.section-1 {
+.section-1,
+.section-3 {
   margin: 70px 0;
   display: flex;
   justify-content: space-between;
@@ -228,7 +229,8 @@ p {
   font-size: 18px;
 }
 
-.section-1-description {
+.section-1-description,
+.section-3-description {
   width: 40%;
   height: 100%;
   display: flex;
@@ -238,7 +240,9 @@ p {
 }
 
 .section-1-hero-container,
-.section-1-hero-container img {
+.section-1-hero-container img,
+.section-3-hero-container,
+.section-3-hero-container img {
   height: 100%;
 }
 
@@ -251,11 +255,11 @@ p {
 
 .section-2 {
   margin: 140px 0 100px 0;
-  height: 1141px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: column;
+  gap: 80px;
 }
 
 .section-2-description {
@@ -353,4 +357,10 @@ h4 {
 .primary-card h4,
 .secondary-card h4 {
   background-color: #fff;
+}
+
+.section-3 {
+  border-radius: 45px;
+  background-color: #F3F3F3;
+  padding-left: 60px;
 }/*# sourceMappingURL=main.css.map */

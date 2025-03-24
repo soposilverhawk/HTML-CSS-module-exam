@@ -57,7 +57,8 @@ h1 {
     $border: 1px solid $secondary-color
   );
 }
-.section-1 {
+.section-1,
+.section-3 {
     margin: 70px 0;
     @include flex();
     height: 515px;
@@ -68,13 +69,16 @@ h2 {
 p {
     font-size: $desktop-p-fs;
 }
-.section-1-description {
+.section-1-description,
+.section-3-description {
     width: 40%;
     height: 100%;
     @include flex($direction: column, $justify: space-evenly, $align: flex-start)
 }
 .section-1-hero-container,
-.section-1-hero-container img {
+.section-1-hero-container img,
+.section-3-hero-container,
+.section-3-hero-container img {
     height: 100%;
 }
 .sponsors-container ul {
@@ -82,8 +86,8 @@ p {
 }
 .section-2 {
     margin: 140px 0 100px 0;
-    height: 1141px;
     @include flex($direction: column, $justify: space-between, $align: flex-start);
+    gap: 80px;
 }
 .section-2-description {
     @include flex();
@@ -147,4 +151,9 @@ h4 {
 .primary-card h4,
 .secondary-card h4 {
   background-color: #fff;
+}
+.section-3 {
+  border-radius: 45px;
+  background-color: $tertiary-color;
+  padding-left: 60px;
 }
