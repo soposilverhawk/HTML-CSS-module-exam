@@ -87,7 +87,8 @@ p {
 .section-2,
 .section-4,
 .section-5,
-.section-6 {
+.section-6,
+.section-7 {
     margin: 140px 0 100px 0;
     @include flex($direction: column, $justify: space-between, $align: flex-start);
     gap: 80px;
@@ -95,7 +96,8 @@ p {
 .section-2-description,
 .section-4-description,
 .section-5-description,
-.section-6-description {
+.section-6-description,
+.section-7-description {
     @include flex();
     gap: 40px;
 }
@@ -256,4 +258,40 @@ h4 {
 .section-6-btn-container {
   width: 100%;
   @include flex($direction: row, $justify: flex-end, $align: center);
+}
+.testimonials-container {
+  @include flex($direction: column, $justify: space-evenly, $align: center);
+  height: 625px;
+  background-color: $secondary-color;
+  border-radius: 45px;
+  width: 100%;
+  padding-top: 84px;
+  color: #fff;
+  overflow: hidden;
+  column-gap: 50px;
+}
+.testimonials {
+  @include flex();
+  column-gap: 50px;
+}
+.testimonial {
+  position: relative;
+}
+.testimonial p {
+  position: absolute;
+  top: 25%;
+  left: 5%;
+}
+.testimonials-controls-container {
+  @include flex();
+  width: 50%;
+}
+.controls-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.testimonials-slider-indicators-container {
+  width: 30%;
+  @include flex();
 }
