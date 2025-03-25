@@ -255,7 +255,8 @@ p {
 
 .section-2,
 .section-4,
-.section-5 {
+.section-5,
+.section-6 {
   margin: 140px 0 100px 0;
   display: flex;
   justify-content: space-between;
@@ -266,7 +267,8 @@ p {
 
 .section-2-description,
 .section-4-description,
-.section-5-description {
+.section-5-description,
+.section-6-description {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -465,4 +467,52 @@ h4 {
 
 .FAQ-expanded {
   background-color: #B9FF66;
+}
+
+.section-6-card {
+  width: 387px;
+  height: 331px;
+  padding: 40px 35px;
+  border-radius: 45px;
+  border: 1px solid #191A23;
+  box-shadow: 0 5px 0 0 #191A23;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.section-6-cards-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 40px;
+}
+
+.section-6-card-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  flex-direction: row;
+  padding-bottom: 28px;
+  border-bottom: 1px solid #191A23;
+}
+
+.team-member-information-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.section-6-btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
 }/*# sourceMappingURL=main.css.map */

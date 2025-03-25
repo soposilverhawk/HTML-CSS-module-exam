@@ -86,14 +86,16 @@ p {
 }
 .section-2,
 .section-4,
-.section-5 {
+.section-5,
+.section-6 {
     margin: 140px 0 100px 0;
     @include flex($direction: column, $justify: space-between, $align: flex-start);
     gap: 80px;
 }
 .section-2-description,
 .section-4-description,
-.section-5-description {
+.section-5-description,
+.section-6-description {
     @include flex();
     gap: 40px;
 }
@@ -226,4 +228,32 @@ h4 {
 }
 .FAQ-expanded {
   background-color: $primary-color;
+}
+.section-6-card {
+  width: 387px;
+  height: 331px;
+  padding: 40px 35px;
+  border-radius: 45px;
+  border: 1px solid $secondary-color;
+  box-shadow: 0 5px 0 0 $secondary-color;
+  @include flex($direction: column, $justify: space-evenly, $align: flex-start);
+}
+.section-6-cards-container {
+  @include flex();
+  flex-wrap: wrap;
+  row-gap: 40px;
+}
+.section-6-card-header {
+  width: 100%;
+  @include flex($direction: row, $justify: space-between, $align: top);
+  padding-bottom: 28px;
+  border-bottom: 1px solid $secondary-color;
+}
+.team-member-information-container {
+  @include flex();
+  gap: 20px
+}
+.section-6-btn-container {
+  width: 100%;
+  @include flex($direction: row, $justify: flex-end, $align: center);
 }
