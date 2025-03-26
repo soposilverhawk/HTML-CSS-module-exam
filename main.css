@@ -521,7 +521,7 @@ h4 {
 
 .testimonials-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   flex-direction: column;
   height: 625px;
@@ -548,7 +548,7 @@ h4 {
   position: relative;
 }
 
-.testimonial p {
+.testimonial-text {
   position: absolute;
   top: 25%;
   left: 5%;
@@ -574,4 +574,19 @@ h4 {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+}
+
+.testimonial-author-container {
+  position: absolute;
+  height: 49px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 20px;
+  left: 80px;
+}
+
+.author-name {
+  color: #B9FF66;
 }/*# sourceMappingURL=main.css.map */

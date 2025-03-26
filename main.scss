@@ -260,7 +260,7 @@ h4 {
   @include flex($direction: row, $justify: flex-end, $align: center);
 }
 .testimonials-container {
-  @include flex($direction: column, $justify: space-evenly, $align: center);
+  @include flex($direction: column, $justify: space-around, $align: center);
   height: 625px;
   background-color: $secondary-color;
   border-radius: 45px;
@@ -277,7 +277,7 @@ h4 {
 .testimonial {
   position: relative;
 }
-.testimonial p {
+.testimonial-text {
   position: absolute;
   top: 25%;
   left: 5%;
@@ -294,4 +294,14 @@ h4 {
 .testimonials-slider-indicators-container {
   width: 30%;
   @include flex();
+}
+.testimonial-author-container {
+  position: absolute;
+  height: 49px;
+  @include flex($direction: column, $justify: space-evenly, $align: flex-start);
+  margin-top: 20px;
+  left: 80px;
+}
+.author-name {
+  color: $primary-color;
 }
