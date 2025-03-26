@@ -88,7 +88,8 @@ p {
 .section-4,
 .section-5,
 .section-6,
-.section-7 {
+.section-7,
+.section-8 {
     margin: 140px 0 100px 0;
     @include flex($direction: column, $justify: space-between, $align: flex-start);
     gap: 80px;
@@ -97,7 +98,8 @@ p {
 .section-4-description,
 .section-5-description,
 .section-6-description,
-.section-7-description {
+.section-7-description,
+.section-8-description {
     @include flex();
     gap: 40px;
 }
@@ -304,4 +306,120 @@ h4 {
 }
 .author-name {
   color: $primary-color;
+}
+.section-8 {
+  position: relative;
+}
+.section-8-content-container {
+  height: 80%;
+  width: 100%;
+  background-color: $tertiary-color;
+  height: 773px;
+  border-radius: 45px;
+}
+form {
+  height: 100%;
+  width: 50%;
+  @include flex($direction: column, $justify: space-evenly, $align: flex-start);
+  padding-left: 150px;
+}
+.section-8-hero-container {
+  position: absolute;
+  top: 20%;
+  right: -22%;
+}
+.user-information-and-message {
+  width: 60%;
+  height: 60%;
+  @include flex($direction: column, $justify: space-between, $align: flex-start);
+  gap: 25px;
+}
+.user-name,
+.user-email,
+.user-message {
+  @include flex($direction: column, $justify: space-between, $align: flex-start);
+  height: 92px;
+  width: 100%;
+}
+.user-input {
+  width: 100%;
+  padding: 18px 30px;
+  border-radius: 14px;
+}
+.user-message {
+  height: 50%
+}
+// input[type="radio"] {
+//   width: 28px;
+//   height: 28px;
+// }
+// input[type="radio"]:checked {
+//   background-color: $primary-color;
+// }
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Create a custom radio button using the label */
+.option-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  padding-left: 30px; /* Space for the custom circle */
+  font-size: 16px;
+  color: #333;
+}
+
+/* Outer circle */
+.option-label::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border: 2px solid #555;
+  border-radius: 50%;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+/* Inner circle (dot) */
+.option-label::after {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: transparent; /* Hidden by default */
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+/* Show the inner circle (green dot) when checked */
+input[type="radio"]:checked + label::after {
+  background-color: $primary-color; /* Green dot color */
+}
+
+/* Optional: Change the border color of the outer circle when selected */
+
+button[type="submit"] {
+  width: 70%;
+}
+.outreach-options-container,
+.option-container {
+  @include flex();
+}
+.outreach-options-container {
+  gap: 35px;
+}
+.option-container {
+  gap: 14px;
 }
