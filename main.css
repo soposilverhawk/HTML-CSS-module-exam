@@ -142,7 +142,8 @@ a {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
-  padding: 60px 100px 50px 100px;
+  padding-top: 60px;
+  overflow: hidden;
 }
 
 header,
@@ -338,6 +339,10 @@ p {
 
 h3 {
   font-size: 40px;
+}
+
+h3,
+h6 {
   background-color: #B9FF66;
   display: inline-block;
 }
@@ -730,12 +735,13 @@ button[type=submit] {
 footer {
   height: 514px;
   background-color: #191A23;
-  border-radius: 45px;
+  border-radius: 45px 45px 0 0;
   padding: 55px 60px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: flex-start;
   flex-direction: column;
+  color: #fff;
 }
 footer .footer-header {
   width: 100%;
@@ -746,7 +752,6 @@ footer .footer-header {
 }
 footer .footer-header .footer-logo-container {
   font-size: 40px;
-  color: #fff;
   gap: 10px;
 }
 footer .footer-header .footer-nav-container {
@@ -788,4 +793,54 @@ footer .footer-header .footer-social-media-links {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+}
+footer .footer-contact-information-container {
+  width: 100%;
+  height: 185px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+footer .footer-contact-information-container .contact-information {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 60%;
+}
+footer .footer-contact-information-container form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  background-color: #292A32;
+  gap: 20px;
+  padding: 20px 40px;
+  border-radius: 14px;
+}
+footer .footer-contact-information-container form input {
+  background-color: transparent;
+  padding: 22px 35px;
+  border: 1px solid #F3F3F3;
+  border-radius: 14px;
+  color: #F3F3F3;
+}
+footer .footer-contact-information-container form input::-moz-placeholder {
+  color: #F3F3F3;
+}
+footer .footer-contact-information-container form input::placeholder {
+  color: #F3F3F3;
+}
+footer .footer-contact-information-container form button {
+  background-color: #B9FF66;
+  color: #191A23;
+  padding: 20px 35px;
+  cursor: pointer;
+}
+footer .footer-copyright-section {
+  width: 100%;
+  padding-top: 50px;
+  border-top: 1px solid #F3F3F3;
 }/*# sourceMappingURL=main.css.map */
