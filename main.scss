@@ -429,19 +429,59 @@ footer {
   background-color: $secondary-color;
   border-radius: 45px;
   padding: 55px 60px;
-  @include flex($direction: column, $justify: space-evenly, $align: flex-start)
-}
-footer {
-  color: #fff;
-}
-.footer-nav__item {
-  color: red
-}
-h5 {
-  font-size: $desktop-h3-fs
+  @include flex($direction: column, $justify: space-evenly, $align: flex-start);
+
+  .footer-header {
+    width: 100%;
+    @include flex();
+  
+    & .footer-logo-container {
+      font-size: $desktop-h2-fs;
+      color: #fff;
+      gap: 10px;
+    }
+  
+    & .footer-nav-container {
+      width: 50%;
+  
+      & nav {
+        width: 100%;
+  
+        & .footer-nav {
+          &__item--link {
+            color: #fff;
+          }
+          &__item {
+            position: relative;
+            padding-bottom: 5px;
+          }
+        
+          &__item::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            background-color: $tertiary-color;
+            height: 2px;
+            transition: width 0.3s ease-in-out;
+          }
+        
+          &__item:hover::after {
+            width: 100%;
+          }
+        }
+  
+        & ul {
+          width: 100%;
+          @include flex();
+        }
+      }
+    }
+    .footer-social-media-links {
+      width: 10%;
+      @include flex();
+    }
+  }
 }
 
-// ask about time and about pages of the design
-// do only homepage - and its responsive
-// make accordions and slides work
-// jer bootstrap da mere sheni css if you will use bootstrap
