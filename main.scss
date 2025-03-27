@@ -11,7 +11,10 @@
 header,
 .header-logo-container,
 .header-nav-container nav,
-.header-nav {
+.header-nav,
+.footer-logo-container,
+.footer-nav-container,
+.footer-nav-container nav {
   @include flex();
 }
 .header-logo-container {
@@ -408,8 +411,6 @@ input[type="radio"]:checked + label::after {
   background-color: $primary-color; /* Green dot color */
 }
 
-/* Optional: Change the border color of the outer circle when selected */
-
 button[type="submit"] {
   width: 70%;
 }
@@ -423,3 +424,24 @@ button[type="submit"] {
 .option-container {
   gap: 14px;
 }
+footer {
+  height: 514px;
+  background-color: $secondary-color;
+  border-radius: 45px;
+  padding: 55px 60px;
+  @include flex($direction: column, $justify: space-evenly, $align: flex-start)
+}
+footer {
+  color: #fff;
+}
+.footer-nav__item {
+  color: red
+}
+h5 {
+  font-size: $desktop-h3-fs
+}
+
+// ask about time and about pages of the design
+// do only homepage - and its responsive
+// make accordions and slides work
+// jer bootstrap da mere sheni css if you will use bootstrap
