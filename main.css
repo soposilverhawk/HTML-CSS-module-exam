@@ -193,7 +193,7 @@ h1 {
   width: 100%;
 }
 
-.btn {
+.button {
   padding: 20px 35px;
   background-color: #191A23;
   font-size: 20px;
@@ -204,7 +204,7 @@ h1 {
   cursor: pointer;
 }
 
-#quote-btn {
+#quote-button {
   padding: 20px 35px;
   background-color: #fff;
   font-size: 20px;
@@ -502,7 +502,7 @@ h4 {
   gap: 20px;
 }
 
-.section-6-btn-container {
+.section-6-button-container {
   width: 100%;
   display: flex;
   justify-content: flex-end;
@@ -553,7 +553,7 @@ h4 {
   width: 50%;
 }
 
-.controls-btn {
+.controls-button {
   background: transparent;
   border: none;
   cursor: pointer;

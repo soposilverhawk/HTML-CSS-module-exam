@@ -51,10 +51,10 @@ h1 {
     width: 100%;
   }
 }
-.btn {
+.button {
   @include button();
 }
-#quote-btn {
+#quote-button {
   @include button(
     $bg-color: #fff,
     $color: #000,
@@ -281,7 +281,7 @@ h4 {
   @include flex();
   gap: 20px;
 }
-.section-6-btn-container {
+.section-6-button-container {
   width: 100%;
   @include flex($direction: row, $justify: flex-end, $align: center);
 }
@@ -312,7 +312,7 @@ h4 {
   @include flex();
   width: 50%;
 }
-.controls-btn {
+.controls-button {
   background: transparent;
   border: none;
   cursor: pointer;
