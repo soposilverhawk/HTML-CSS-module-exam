@@ -791,6 +791,9 @@ footer .footer-contact-information-container .contact-information {
   flex-direction: column;
   width: 60%;
 }
+footer .footer-contact-information-container .contact-information h6 {
+  font-size: 20px;
+}
 footer .footer-contact-information-container form {
   display: flex;
   justify-content: space-between;
