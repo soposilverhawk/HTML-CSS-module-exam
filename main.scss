@@ -52,7 +52,7 @@ h1 {
   }
 }
 .btn {
-    @include button();
+  @include button();
 }
 #quote-btn {
   @include button(
@@ -63,30 +63,30 @@ h1 {
 }
 .section-1,
 .section-3 {
-    margin: 70px 0;
-    @include flex();
-    height: 515px;
+  margin: 70px 0;
+  @include flex();
+  height: 515px;
 }
 h2 {
-    font-size: $desktop-h1-fs;
+  font-size: $desktop-h1-fs;
 }
 p {
-    font-size: $desktop-p-fs;
+  font-size: $desktop-p-fs;
 }
 .section-1-description,
 .section-3-description {
-    width: 40%;
-    height: 100%;
-    @include flex($direction: column, $justify: space-evenly, $align: flex-start)
+  width: 40%;
+  height: 100%;
+  @include flex($direction: column, $justify: space-evenly, $align: flex-start);
 }
 .section-1-hero-container,
 .section-1-hero-container img,
 .section-3-hero-container,
 .section-3-hero-container img {
-    height: 100%;
+  height: 100%;
 }
 .sponsors-container ul {
-    @include flex();
+  @include flex();
 }
 .section-2,
 .section-4,
@@ -94,9 +94,13 @@ p {
 .section-6,
 .section-7,
 .section-8 {
-    margin: 140px 0 100px 0;
-    @include flex($direction: column, $justify: space-between, $align: flex-start);
-    gap: 80px;
+  margin: 140px 0 100px 0;
+  @include flex(
+    $direction: column,
+    $justify: space-between,
+    $align: flex-start
+  );
+  gap: 80px;
 }
 .section-2-description,
 .section-4-description,
@@ -104,51 +108,55 @@ p {
 .section-6-description,
 .section-7-description,
 .section-8-description {
-    @include flex();
-    gap: 40px;
+  @include flex();
+  gap: 40px;
 }
 .section-2-cards-container {
-    height: 88.5%;
-    width: 100%;
-    @include flex();
-    flex-wrap: wrap;
-    column-gap: 20px;
-    row-gap: 40px;
+  height: 88.5%;
+  width: 100%;
+  @include flex();
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 40px;
 }
 .section-2-card {
-    width: 600px;
-    height: 310px;
-    border: 1px solid $secondary-color;
-    padding: 50px;
-    border-radius: 45px;
-    box-shadow: 0 5px 0 0 $secondary-color;
-    @include flex();
+  width: 600px;
+  height: 310px;
+  border: 1px solid $secondary-color;
+  padding: 50px;
+  border-radius: 45px;
+  box-shadow: 0 5px 0 0 $secondary-color;
+  @include flex();
 }
 .card-description-container,
 .card-img-container {
-    height: 60%;
+  height: 60%;
 }
 .card-img-container {
-    @include flex($direction: row, $justify: center, $align: center)
+  @include flex($direction: row, $justify: center, $align: center);
 }
 .card-description-container {
-    @include flex($direction: column, $justify: space-between, $align: flex-start);
+  @include flex(
+    $direction: column,
+    $justify: space-between,
+    $align: flex-start
+  );
 }
 .learn-more-container {
-    @include flex();
-    gap: 7px;
+  @include flex();
+  gap: 7px;
 }
 h3 {
   font-size: $desktop-h2-fs;
 }
 h3,
 h6 {
-    background-color: $primary-color;
-    display: inline-block;
+  background-color: $primary-color;
+  display: inline-block;
 }
 h4 {
-    font-size: $desktop-h3-fs;
-    padding: 5px;
+  font-size: $desktop-h3-fs;
+  padding: 5px;
 }
 .tertiary-card {
   background-color: $tertiary-color;
@@ -197,49 +205,58 @@ h4 {
   border-right: 1px solid #fff;
   padding-right: 64px;
 }
-.section-5-FAQ-container {
-  @include flex($direction: column, $justify: space-between, $align: flex-start);
+.accordion {
+  width: 100%;
+  @include flex(
+    $direction: column,
+    $justify: space-between,
+    $align: flex-start
+  );
   gap: 30px;
+
+  .accordion-item {
+    width: 100%;
+    background-color: $tertiary-color;
+    padding: 60px 41px;
+    border-radius: 45px;
+    border: 1px solid $secondary-color;
+    box-shadow: 0 5px 0 0 $secondary-color;
+    transition: background-color 0.2s ease-in;
+    --bs-accordion-border-width: none;
+
+    .accordion-button {
+      background-color: transparent;
+      box-shadow: none;
+      padding: 0;
+      padding-bottom: 30px;
+      gap: 25px;
+      font-weight: bold;
+
+      & > span {
+        font-size: $desktop-h1-fs;
+      }
+      & > p {
+        font-size: 38px;
+      }
+    }
+
+    &:has(.accordion-collapse.show) {
+      background-color: $primary-color;
+
+      .accordion-body {
+        padding: 0;
+        padding-top: 30px;
+      }
+
+      &:has(.accordion-button) {
+        .accordion-button {
+          border-bottom: 1px solid $secondary-color;
+        }
+      }
+    }
+  }
 }
-.FAQ {
-  width: 93%;
-  background-color: $tertiary-color;
-  padding: 60px 41px;
-  border-radius: 45px;
-  border: 1px solid $secondary-color;
-  box-shadow: 0 5px 0 0 $secondary-color
-}
-.FAQ-header,
-.FAQ-number-and-title {
-  @include flex();
-}
-.FAQ-number-and-title {
-  gap: 25px;
-  font-weight: bold;
-}
-.FAQ-numeration {
-  font-size: $desktop-h1-fs;
-}
-.FAQ-number-and-title p {
-  font-size: 38px;
-}
-.FAQ-toggle-btn {
-  width: 58px;
-  height: 58px;
-  border-radius: 50%;
-  @include flex($direction: row, $justify: center, $align: center);
-  cursor: pointer;
-}
-.FAQ-content {
-  margin-top: 30px;
-}
-.FAQ-expanded .FAQ-header {
-  border-bottom: 1px solid $secondary-color;
-  padding: 30px 0;
-}
-.FAQ-expanded {
-  background-color: $primary-color;
-}
+
 .section-6-card {
   width: 387px;
   height: 331px;
@@ -262,7 +279,7 @@ h4 {
 }
 .team-member-information-container {
   @include flex();
-  gap: 20px
+  gap: 20px;
 }
 .section-6-btn-container {
   width: 100%;
@@ -338,13 +355,21 @@ form {
 .user-information-and-message {
   width: 60%;
   height: 60%;
-  @include flex($direction: column, $justify: space-between, $align: flex-start);
+  @include flex(
+    $direction: column,
+    $justify: space-between,
+    $align: flex-start
+  );
   gap: 25px;
 }
 .user-name,
 .user-email,
 .user-message {
-  @include flex($direction: column, $justify: space-between, $align: flex-start);
+  @include flex(
+    $direction: column,
+    $justify: space-between,
+    $align: flex-start
+  );
   height: 92px;
   width: 100%;
 }
@@ -354,7 +379,7 @@ form {
   border-radius: 14px;
 }
 .user-message {
-  height: 50%
+  height: 50%;
 }
 // input[type="radio"] {
 //   width: 28px;
@@ -383,7 +408,7 @@ input[type="radio"] {
 
 /* Outer circle */
 .option-label::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 50%;
@@ -398,7 +423,7 @@ input[type="radio"] {
 
 /* Inner circle (dot) */
 .option-label::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 6px;
   top: 50%;
@@ -428,29 +453,34 @@ button[type="submit"] {
 .option-container {
   gap: 14px;
 }
+
 footer {
   height: 514px;
   background-color: $secondary-color;
   border-radius: 45px 45px 0 0;
   padding: 55px 60px;
-  @include flex($direction: column, $justify: space-between, $align: flex-start);
+  @include flex(
+    $direction: column,
+    $justify: space-between,
+    $align: flex-start
+  );
   color: #fff;
 
   .footer-header {
     width: 100%;
     @include flex();
-  
+
     & .footer-logo-container {
       font-size: $desktop-h2-fs;
       gap: 10px;
     }
-  
+
     & .footer-nav-container {
       width: 50%;
-  
+
       & nav {
         width: 100%;
-  
+
         & .footer-nav {
           &__item--link {
             color: #fff;
@@ -459,7 +489,7 @@ footer {
             position: relative;
             padding-bottom: 5px;
           }
-        
+
           &__item::after {
             content: "";
             position: absolute;
@@ -470,12 +500,12 @@ footer {
             height: 2px;
             transition: width 0.3s ease-in-out;
           }
-        
+
           &__item:hover::after {
             width: 100%;
           }
         }
-  
+
         & ul {
           width: 100%;
           @include flex();
@@ -494,13 +524,17 @@ footer {
 
     .contact-information {
       height: 100%;
-      @include flex($direction: column, $justify: space-between, $align: flex-start);
-      width: 60%
+      @include flex(
+        $direction: column,
+        $justify: space-between,
+        $align: flex-start
+      );
+      width: 60%;
     }
 
     form {
       @include flex();
-      background-color: #292A32;
+      background-color: #292a32;
       gap: 20px;
       padding: 20px 40px;
       border-radius: 14px;
@@ -530,4 +564,3 @@ footer {
     border-top: 1px solid $tertiary-color;
   }
 }
-

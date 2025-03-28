@@ -419,66 +419,47 @@ h4 {
   padding-right: 64px;
 }
 
-.section-5-FAQ-container {
+.accordion {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: column;
   gap: 30px;
 }
-
-.FAQ {
-  width: 93%;
+.accordion .accordion-item {
+  width: 100%;
   background-color: #F3F3F3;
   padding: 60px 41px;
   border-radius: 45px;
   border: 1px solid #191A23;
   box-shadow: 0 5px 0 0 #191A23;
+  transition: background-color 0.2s ease-in;
+  --bs-accordion-border-width: none;
 }
-
-.FAQ-header,
-.FAQ-number-and-title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-}
-
-.FAQ-number-and-title {
+.accordion .accordion-item .accordion-button {
+  background-color: transparent;
+  box-shadow: none;
+  padding: 0;
+  padding-bottom: 30px;
   gap: 25px;
   font-weight: bold;
 }
-
-.FAQ-numeration {
+.accordion .accordion-item .accordion-button > span {
   font-size: 60px;
 }
-
-.FAQ-number-and-title p {
+.accordion .accordion-item .accordion-button > p {
   font-size: 38px;
 }
-
-.FAQ-toggle-btn {
-  width: 58px;
-  height: 58px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  cursor: pointer;
-}
-
-.FAQ-content {
-  margin-top: 30px;
-}
-
-.FAQ-expanded .FAQ-header {
-  border-bottom: 1px solid #191A23;
-  padding: 30px 0;
-}
-
-.FAQ-expanded {
+.accordion .accordion-item:has(.accordion-collapse.show) {
   background-color: #B9FF66;
+}
+.accordion .accordion-item:has(.accordion-collapse.show) .accordion-body {
+  padding: 0;
+  padding-top: 30px;
+}
+.accordion .accordion-item:has(.accordion-collapse.show):has(.accordion-button) .accordion-button {
+  border-bottom: 1px solid #191A23;
 }
 
 .section-6-card {
@@ -815,7 +796,7 @@ footer .footer-contact-information-container form {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  background-color: #292A32;
+  background-color: #292a32;
   gap: 20px;
   padding: 20px 40px;
   border-radius: 14px;
