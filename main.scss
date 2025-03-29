@@ -102,6 +102,8 @@ p {
   );
   gap: 80px;
 }
+// adjust width to be max-width: 1240px and make it margin: 0 auto;
+// make a class selector for all of the containers
 .section-2-description,
 .section-4-description,
 .section-5-description,
@@ -353,7 +355,7 @@ form {
   right: -22%;
 }
 .user-information-and-message {
-  width: 60%;
+  width: 100%;
   height: 60%;
   @include flex(
     $direction: column,
@@ -381,13 +383,6 @@ form {
 .user-message {
   height: 50%;
 }
-// input[type="radio"] {
-//   width: 28px;
-//   height: 28px;
-// }
-// input[type="radio"]:checked {
-//   background-color: $primary-color;
-// }
 input[type="radio"] {
   position: absolute;
   opacity: 0;
@@ -563,8 +558,14 @@ footer {
     }
   }
   .footer-copyright-section {
-    width: 100%;
+    gap: 40px;
     padding-top: 50px;
     border-top: 1px solid $tertiary-color;
+    @include flex();
+
+    a {
+      color: #fff;
+      text-decoration: underline;
+    }
   }
 }
