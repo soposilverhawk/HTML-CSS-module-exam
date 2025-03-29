@@ -73,7 +73,8 @@ p {
   height: 100%;
   @include flex($direction: column, $justify: space-evenly, $align: flex-start);
 }
-.section-1-mobile {
+.section-1-mobile,
+.section-3-mobile {
   display: none;
 }
 .header-container,
@@ -615,5 +616,83 @@ footer {
     }
 
     // fix the burger functionality later
+  }
+  main {
+    max-width: 430px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+  }
+  .section-1 {
+    display: none;
+  }
+
+  .section-1-mobile {
+    margin-top: 70px;
+    width: 100%;
+    height: 700px;
+    @include flex($direction: column, $justify: space-between, $align: center);
+
+    h2 {
+      font-size: $mobile-h1-fs;
+    }
+
+    &-hero-container {
+      width: 100%;
+
+      img {
+        width: 100%
+      }
+    }
+
+    button {
+      width: 100%;
+    }
+  }
+
+  aside {
+    margin: 25px 0;
+
+    ul {
+      @include flex();
+      flex-wrap: wrap;
+      row-gap: 20px;
+    }
+  }
+  .section-2,
+  .section-3,
+  .section-4,
+  .section-5,
+  .section-6,
+  .section-7,
+  .section-8 {
+    margin: 0;
+  }
+  .section-2-description {
+    flex-direction: column;
+
+    p {
+      text-align: center;
+    }
+  }
+  .section-2-card {
+    width: 100%;
+    padding-left: 20px;
+    gap: 10px;
+
+    .card-description-container {
+      gap: 30px;
+    }
+  }
+  .section-3-mobile {
+    @include flex($direction: column, $justify: space-between, $align: flex-start);
+    padding: 40px 60px;
+    background-color: $tertiary-color;
+    height: 400px;
+    border-radius: 45px;
+
+    .button {
+      width: 100%;
+    }
   }
 }
