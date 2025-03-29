@@ -980,4 +980,21 @@ footer .footer-copyright-section a {
   .section-4-cards-container .section-4-card > p {
     width: 100%;
   }
+  .section-5-description {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .section-5-description > p {
+    text-align: center;
+  }
+  .section-5 .accordion-item {
+    padding: 30px 41px 0 41px;
+    border-top: none;
+  }
+  .section-5 .accordion-item .accordion-button {
+    font-size: 18px;
+  }
+  .section-5 .accordion-item .accordion-button > span {
+    font-size: 26px;
+  }
 }/*# sourceMappingURL=main.css.map */

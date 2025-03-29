@@ -720,5 +720,27 @@ footer {
       }
     }
   }
+  .section-5-description {
+    flex-direction: column;
+    margin: 0 auto;
 
+    & > p {
+      text-align: center;
+    }
+  }
+
+  .section-5 {
+    .accordion-item {
+      padding: 30px 41px 0 41px;
+      border-top: none;
+
+      .accordion-button {
+        font-size: $mobile-h4-fs;
+
+        & > span {
+          font-size: $mobile-h3-fs;
+        }
+      }
+    }
+  }
 }
