@@ -696,4 +696,29 @@ footer {
       width: 100%;
     }
   }
+  .section-4-description {
+    flex-direction: column;
+
+    p {
+      text-align: center;
+    }
+  }
+
+  .section-4-cards-container {
+    background-color: transparent;
+    padding: 0;
+
+    .section-4-card {
+      width: 20rem;
+      padding: 4rem;
+      border-radius: 45px;
+      background-color: $secondary-color;
+      border-right: none;
+
+      & > p {
+        width: 100%;
+      }
+    }
+  }
+
 }

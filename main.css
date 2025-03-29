@@ -960,4 +960,24 @@ footer .footer-copyright-section a {
   .section-3-mobile .button {
     width: 100%;
   }
+  .section-4-description {
+    flex-direction: column;
+  }
+  .section-4-description p {
+    text-align: center;
+  }
+  .section-4-cards-container {
+    background-color: transparent;
+    padding: 0;
+  }
+  .section-4-cards-container .section-4-card {
+    width: 20rem;
+    padding: 4rem;
+    border-radius: 45px;
+    background-color: #191A23;
+    border-right: none;
+  }
+  .section-4-cards-container .section-4-card > p {
+    width: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */
