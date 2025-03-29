@@ -888,7 +888,8 @@ footer .footer-copyright-section a {
     flex-direction: column;
     gap: 80px;
   }
-  .section-1 {
+  .section-1,
+  .section-3 {
     display: none;
   }
   .section-1-mobile {
@@ -924,7 +925,7 @@ footer .footer-copyright-section a {
     row-gap: 20px;
   }
   .section-2,
-  .section-3,
+  .section-3-mobile,
   .section-4,
   .section-5,
   .section-6,
