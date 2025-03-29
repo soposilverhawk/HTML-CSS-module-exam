@@ -233,6 +233,10 @@ p {
   flex-direction: column;
 }
 
+.section-1-mobile {
+  display: none;
+}
+
 .header-container,
 .section-1,
 aside {
@@ -843,4 +847,38 @@ footer .footer-copyright-section {
 footer .footer-copyright-section a {
   color: #fff;
   text-decoration: underline;
+}
+
+.burger-icon {
+  font-size: 43px;
+  display: none;
+}
+
+.burger-toggle {
+  display: none;
+}
+
+@media screen and (max-width: 430px) {
+  .container {
+    max-width: 430px;
+    width: 100%;
+  }
+  .container .header-nav-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+  }
+  .container nav {
+    display: none;
+  }
+  .container h1 {
+    font-size: 43px;
+  }
+  .container .burger-icon {
+    display: block;
+  }
+  .container .burger-menu:checked ~ nav {
+    display: flex;
+  }
 }/*# sourceMappingURL=main.css.map */

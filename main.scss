@@ -73,6 +73,9 @@ p {
   height: 100%;
   @include flex($direction: column, $justify: space-evenly, $align: flex-start);
 }
+.section-1-mobile {
+  display: none;
+}
 .header-container,
 .section-1,
 aside {
@@ -574,5 +577,43 @@ footer {
       color: #fff;
       text-decoration: underline;
     }
+  }
+}
+
+.burger-icon {
+  font-size: $mobile-h1-fs;
+  display: none;
+}
+.burger-toggle {
+  display: none;
+}
+
+
+// fix the burger functionality later
+
+@media screen and (max-width: 430px) {
+  .container {
+    max-width: 430px;
+    width: 100%;
+
+    .header-nav-container {
+      @include flex($justify: flex-end);
+    }
+    nav {
+      display: none;
+    }
+    h1 {
+      font-size: $mobile-h1-fs;
+    }
+
+    .burger-icon {
+      display: block;
+    }
+
+    .burger-menu:checked ~ nav {
+      display: flex;
+    }
+
+    // fix the burger functionality later
   }
 }
