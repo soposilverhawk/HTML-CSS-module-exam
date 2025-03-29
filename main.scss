@@ -25,7 +25,7 @@ h1 {
   font-size: $desktop-h1-fs;
 }
 .header-nav-container {
-  width: 56.5%;
+  width: 60%;
 }
 .header-nav {
   gap: 40px;
@@ -61,12 +61,6 @@ h1 {
     $border: 1px solid $secondary-color
   );
 }
-.section-1,
-.section-3 {
-  margin: 70px 0;
-  @include flex();
-  height: 515px;
-}
 h2 {
   font-size: $desktop-h1-fs;
 }
@@ -78,6 +72,19 @@ p {
   width: 40%;
   height: 100%;
   @include flex($direction: column, $justify: space-evenly, $align: flex-start);
+}
+.header-container,
+.section-1,
+aside {
+  max-width: 1240px;
+  width: 100%;
+  margin: auto;
+}
+.section-1,
+.section-3 {
+  margin-top: 70px;
+  @include flex();
+  height: 515px;
 }
 .section-1-hero-container,
 .section-1-hero-container img,
@@ -94,7 +101,9 @@ p {
 .section-6,
 .section-7,
 .section-8 {
-  margin: 140px 0 100px 0;
+  max-width: 1240px;
+  width: 100%;
+  margin: 140px auto;
   @include flex(
     $direction: column,
     $justify: space-between,
@@ -186,7 +195,7 @@ h4 {
   margin-bottom: 140px;
 }
 .section-4-cards-container {
-  height: 250px;
+  height: 326px;
   padding: 70px 60px;
   background-color: $secondary-color;
   border-radius: 45px;
@@ -201,7 +210,7 @@ h4 {
 }
 .section-4-card {
   @include flex($direction: column, $justify: space-evenly, $align: flex-start);
-  height: 50%;
+  height: 100%;
 }
 .section-4-card:not(:last-child) {
   border-right: 1px solid #fff;
