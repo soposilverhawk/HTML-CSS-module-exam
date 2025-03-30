@@ -731,7 +731,7 @@ footer {
 
   .section-5 {
     .accordion-item {
-      padding: 30px 41px 0 41px;
+      padding: 35px 41px 15px 41px;
       border-top: none;
 
       .accordion-button {
@@ -741,6 +741,22 @@ footer {
           font-size: $mobile-h3-fs;
         }
       }
+    }
+  }
+  .section-6 {
+    &-description {
+      flex-direction: column;
+
+      & > p {
+        text-align: center;
+      }
+    }
+    &-cards-container {
+      padding-left: 10px;
+    }
+    &-button-container,
+    &-button-container button {
+      width: 100%;
     }
   }
 }
