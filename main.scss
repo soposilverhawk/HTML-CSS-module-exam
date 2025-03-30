@@ -74,7 +74,8 @@ p {
   @include flex($direction: column, $justify: space-evenly, $align: flex-start);
 }
 .section-1-mobile,
-.section-3-mobile {
+.section-3-mobile,
+.section-8-mobile {
   display: none;
 }
 .header-container,
@@ -589,7 +590,6 @@ footer {
   display: none;
 }
 
-
 // fix the burger functionality later
 
 @media screen and (max-width: 430px) {
@@ -624,7 +624,8 @@ footer {
     gap: 80px;
   }
   .section-1,
-  .section-3 {
+  .section-3,
+  .section-8 {
     display: none;
   }
 
@@ -642,7 +643,7 @@ footer {
       width: 100%;
 
       img {
-        width: 100%
+        width: 100%;
       }
     }
 
@@ -666,7 +667,7 @@ footer {
   .section-5,
   .section-6,
   .section-7,
-  .section-8 {
+  .section-8-mobile {
     margin: 0;
   }
   .section-2-description {
@@ -686,7 +687,11 @@ footer {
     }
   }
   .section-3-mobile {
-    @include flex($direction: column, $justify: space-between, $align: flex-start);
+    @include flex(
+      $direction: column,
+      $justify: space-between,
+      $align: flex-start
+    );
     padding: 40px 60px;
     background-color: $tertiary-color;
     height: 400px;
@@ -792,6 +797,46 @@ footer {
 
         &-controls-container {
           width: 90%;
+        }
+      }
+    }
+  }
+  .section-8-mobile {
+    width: 100%;
+    margin-bottom: 80px;
+    @include flex($direction: column, $justify: space-between, $align: center);
+    &-description {
+      flex-direction: column;
+      margin: 0 auto;
+      text-align: center;
+
+      & > p {
+        margin-top: 20px;
+      }
+    }
+    &-content-container {
+      width: 100%;
+      background-color: $tertiary-color;
+      border-radius: 45px;
+      height: 773px;
+      margin-top: 20px;
+
+      form {
+        width: 80%;
+        padding: 0;
+        margin: 0 auto;
+        .form-group {
+          margin: 0 auto;
+        }
+
+        
+
+        .user-input {
+          width: 100%;
+        }
+
+        button {
+          width: 100%;
         }
       }
     }

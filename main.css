@@ -234,7 +234,8 @@ p {
 }
 
 .section-1-mobile,
-.section-3-mobile {
+.section-3-mobile,
+.section-8-mobile {
   display: none;
 }
 
@@ -889,7 +890,8 @@ footer .footer-copyright-section a {
     gap: 80px;
   }
   .section-1,
-  .section-3 {
+  .section-3,
+  .section-8 {
     display: none;
   }
   .section-1-mobile {
@@ -930,7 +932,7 @@ footer .footer-copyright-section a {
   .section-5,
   .section-6,
   .section-7,
-  .section-8 {
+  .section-8-mobile {
     margin: 0;
   }
   .section-2-description {
@@ -1037,5 +1039,42 @@ footer .footer-copyright-section a {
   }
   .section-7 .testimonials-container .testimonials-controls-container {
     width: 90%;
+  }
+  .section-8-mobile {
+    width: 100%;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .section-8-mobile-description {
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .section-8-mobile-description > p {
+    margin-top: 20px;
+  }
+  .section-8-mobile-content-container {
+    width: 100%;
+    background-color: #F3F3F3;
+    border-radius: 45px;
+    height: 773px;
+    margin-top: 20px;
+  }
+  .section-8-mobile-content-container form {
+    width: 80%;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .section-8-mobile-content-container form .form-group {
+    margin: 0 auto;
+  }
+  .section-8-mobile-content-container form .user-input {
+    width: 100%;
+  }
+  .section-8-mobile-content-container form button {
+    width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */
