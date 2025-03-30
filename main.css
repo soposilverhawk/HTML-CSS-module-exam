@@ -1009,4 +1009,33 @@ footer .footer-copyright-section a {
   .section-6-button-container, .section-6-button-container button {
     width: 100%;
   }
+  .section-7-description {
+    flex-direction: column;
+  }
+  .section-7-description > p {
+    text-align: center;
+  }
+  .section-7 .testimonials-container {
+    padding-top: 0;
+  }
+  .section-7 .testimonials-container .testimonials {
+    width: 90%;
+    height: 80%;
+  }
+  .section-7 .testimonials-container .testimonials .testimonial {
+    width: 100%;
+  }
+  .section-7 .testimonials-container .testimonials .testimonial > img {
+    width: 360px;
+    height: 250px;
+  }
+  .section-7 .testimonials-container .testimonials .testimonial-text {
+    top: 10%;
+  }
+  .section-7 .testimonials-container .testimonials .testimonial-author-container {
+    left: 10%;
+  }
+  .section-7 .testimonials-container .testimonials-controls-container {
+    width: 90%;
+  }
 }/*# sourceMappingURL=main.css.map */

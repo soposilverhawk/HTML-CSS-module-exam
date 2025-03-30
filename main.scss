@@ -759,4 +759,41 @@ footer {
       width: 100%;
     }
   }
+  .section-7 {
+    &-description {
+      flex-direction: column;
+
+      & > p {
+        text-align: center;
+      }
+    }
+    .testimonials-container {
+      padding-top: 0;
+
+      .testimonials {
+        width: 90%;
+        height: 80%;
+        // background-color: red;
+
+        .testimonial {
+          width: 100%;
+
+          & > img {
+            width: 360px;
+            height: 250px;
+          }
+          &-text {
+            top: 10%;
+          }
+          &-author-container {
+            left: 10%;
+          }
+        }
+
+        &-controls-container {
+          width: 90%;
+        }
+      }
+    }
+  }
 }
