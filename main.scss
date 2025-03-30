@@ -574,6 +574,7 @@ footer {
 
       button {
         @include button($bg-color: $primary-color, $color: $secondary-color);
+        padding: 10px 50px;
       }
     }
   }

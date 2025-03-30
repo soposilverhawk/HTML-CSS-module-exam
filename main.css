@@ -861,6 +861,7 @@ footer .footer-contact-information-container form button {
   color: #191A23;
   cursor: pointer;
   transition: all 0.2s ease;
+  padding: 10px 50px;
 }
 footer .footer-contact-information-container form button:hover {
   background-color: #94f31f;
