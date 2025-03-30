@@ -476,6 +476,10 @@ h4 {
   border-bottom: 1px solid #191A23;
 }
 
+.header-line-break {
+  display: block;
+}
+
 .section-6-card {
   width: 387px;
   height: 331px;
@@ -1009,6 +1013,9 @@ footer .footer-copyright-section a {
   }
   .section-5-description > p {
     text-align: center;
+  }
+  .header-line-break {
+    display: inline;
   }
   .section-5 .accordion-item {
     padding: 35px 41px 15px 41px;

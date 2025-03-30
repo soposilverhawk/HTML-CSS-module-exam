@@ -116,7 +116,6 @@ aside {
   );
   gap: 80px;
 }
-// adjust width to be max-width: 1240px and make it margin: 0 auto;
 // make a class selector for all of the containers
 .section-2-description,
 .section-4-description,
@@ -269,6 +268,10 @@ h4 {
       }
     }
   }
+}
+
+.header-line-break {
+  display: block;
 }
 
 .section-6-card {
@@ -754,6 +757,10 @@ footer {
     & > p {
       text-align: center;
     }
+  }
+
+  .header-line-break {
+    display: inline;
   }
 
   .section-5 {
