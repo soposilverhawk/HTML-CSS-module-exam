@@ -199,9 +199,14 @@ h1 {
   font-size: 20px;
   line-height: 28px;
   border-radius: 14px;
-  color: white;
-  border: none;
+  color: #fff;
   cursor: pointer;
+  transition: all 0.2s ease;
+}
+.button:hover {
+  background-color: #fff;
+  color: #191A23;
+  border: 1px solid #191A23;
 }
 
 #quote-button {
@@ -211,8 +216,12 @@ h1 {
   line-height: 28px;
   border-radius: 14px;
   color: #000;
-  border: 1px solid #191A23;
   cursor: pointer;
+  transition: all 0.2s ease;
+}
+#quote-button:hover {
+  background-color: #191A23;
+  color: #fff;
 }
 
 h2 {
@@ -836,10 +845,17 @@ footer .footer-contact-information-container form input::placeholder {
   color: #F3F3F3;
 }
 footer .footer-contact-information-container form button {
-  background-color: #B9FF66;
-  color: #191A23;
   padding: 20px 35px;
+  background-color: #B9FF66;
+  font-size: 20px;
+  line-height: 28px;
+  border-radius: 14px;
+  color: #191A23;
   cursor: pointer;
+  transition: all 0.2s ease;
+}
+footer .footer-contact-information-container form button:hover {
+  background-color: #94f31f;
 }
 footer .footer-copyright-section {
   gap: 40px;

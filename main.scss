@@ -58,7 +58,6 @@ h1 {
   @include button(
     $bg-color: #fff,
     $color: #000,
-    $border: 1px solid $secondary-color
   );
 }
 h2 {
@@ -565,10 +564,7 @@ footer {
       }
 
       button {
-        background-color: $primary-color;
-        color: $secondary-color;
-        padding: 20px 35px;
-        cursor: pointer;
+        @include button($bg-color: $primary-color, $color: $secondary-color)
       }
     }
   }
