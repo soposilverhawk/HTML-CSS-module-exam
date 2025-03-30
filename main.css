@@ -874,6 +874,7 @@ footer .footer-copyright-section a {
     justify-content: flex-end;
     align-items: center;
     flex-direction: row;
+    position: relative;
   }
   .container .header-nav-container nav {
     display: none;
@@ -884,8 +885,21 @@ footer .footer-copyright-section a {
   .container .burger-icon {
     display: block;
   }
-  .container .burger-menu:checked ~ nav {
+  .container .burger-toggle:checked ~ nav {
     display: flex;
+  }
+  .container .header-nav {
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    background-color: #F3F3F3;
+    width: 100%;
+    padding: 20px;
+    top: 50px;
+    border-radius: 10px;
+  }
+  .container .header-nav ~ button {
+    display: none;
   }
   main {
     max-width: 430px;

@@ -590,7 +590,6 @@ footer {
   display: none;
 }
 
-// fix the burger functionality later
 
 @media screen and (max-width: 430px) {
   .container {
@@ -604,6 +603,7 @@ footer {
 
     .header-nav-container {
       @include flex($justify: flex-end);
+      position: relative;
     }
     .header-nav-container nav {
       display: none;
@@ -616,11 +616,25 @@ footer {
       display: block;
     }
 
-    .burger-menu:checked ~ nav {
+    .burger-toggle:checked ~ nav {
       display: flex;
     }
 
-    // fix the burger functionality later
+
+    .header-nav {
+      flex-direction: column;
+      position: absolute;
+      right: 0;
+      background-color: $tertiary-color;
+      width: 100%;
+      padding: 20px;
+      top: 50px;
+      border-radius: 10px;
+
+      & ~ button {
+        display: none;
+      }
+    }
   }
   main {
     max-width: 430px;
