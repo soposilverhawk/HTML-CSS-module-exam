@@ -44,9 +44,7 @@ Users should be able to:
 
 ### What I learned
 
-I learned how to properly implement bootstrap framework into my code and make it work well with my custom css files. Apart from that, I learned how to work with SASS/SCSS nested syntax, how to create general mixins for repeated styles and implement conditional rendering for different elements of the same classes.
-
-To see how you can add code snippets, see below:
+I learned how to properly implement bootstrap framework into my code and make it work well with my custom css files. Apart from that, I learned how to work with SASS/SCSS nested syntax, how to create general mixins for repeated styles and implement conditional rendering for different elements of the same classes. Furthermore, I learned how to review my code for refactoring purposes after investigating for ways to write cleaner code
 
 
 ### Continued development
