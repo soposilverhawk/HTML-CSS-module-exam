@@ -298,12 +298,7 @@ footer {
   gap: 80px;
 }
 
-.section-2-description,
-.section-4-description,
-.section-5-description,
-.section-6-description,
-.section-7-description,
-.section-8-description {
+.main-content-section-description {
   display: flex;
   justify-content: space-between;
   align-items: center;
