@@ -1,31 +1,42 @@
 @mixin flex($direction: row, $justify: space-between, $align: center) {
-    display: flex;
-    justify-content: $justify;
-    align-items: $align;
-    flex-direction: $direction;
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
 }
 
 @mixin button($bg-color: $secondary-color, $color: #fff) {
-    padding: 20px 35px;
-    background-color: $bg-color;
-    font-size: $desktop-h4-fs;
-    line-height: 28px;
-    border-radius: 14px;
-    color: $color;
-    cursor: pointer;
-    transition: all 0.2s ease;
+  padding: 20px 35px;
+  background-color: $bg-color;
+  font-size: $desktop-h4-fs;
+  line-height: 28px;
+  border-radius: 14px;
+  color: $color;
+  cursor: pointer;
+  transition: all 0.2s ease;
 
-    &:hover {
-        @if ($bg-color == $secondary-color) {
-            background-color: #fff;
-            color: $secondary-color;
-            border: 1px solid $secondary-color;
-        } @else if($bg-color == #fff) {
-            background-color: $secondary-color;
-            color: #fff;
-        } @else {
-            background-color: #94f31f;
-        }
+  &:hover {
+    @if ($bg-color == $secondary-color) {
+      background-color: #fff;
+      color: $secondary-color;
+      border: 1px solid $secondary-color;
+    } @else if($bg-color == #fff) {
+      background-color: $secondary-color;
+      color: #fff;
+    } @else {
+      background-color: #94f31f;
     }
+  }
 }
 
+@mixin mainContentLayout() {
+  max-width: 1240px;
+  width: 100%;
+  margin: 140px auto;
+  @include flex(
+    $direction: column,
+    $justify: space-between,
+    $align: flex-start
+  );
+  gap: 80px;
+}

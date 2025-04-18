@@ -106,22 +106,9 @@ aside {
 .sponsors-container ul {
   @include flex();
 }
-.section-2,
-.section-4,
-.section-5,
-.section-6,
-.section-7,
-.section-8,
+.main-content-layout,
 footer {
-  max-width: 1240px;
-  width: 100%;
-  margin: 140px auto;
-  @include flex(
-    $direction: column,
-    $justify: space-between,
-    $align: flex-start
-  );
-  gap: 80px;
+  @include mainContentLayout();
 }
 // make a class selector for all of the containers
 .section-2-description,
