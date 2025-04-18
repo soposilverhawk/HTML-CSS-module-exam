@@ -15,13 +15,7 @@ body {
   padding-top: 60px;
   overflow: hidden;
 }
-header,
-.header-logo-container,
-.header-nav-container nav,
-.header-nav,
-.footer-logo-container,
-.footer-nav-container,
-.footer-nav-container nav {
+.flex {
   @include flex();
 }
 .header-logo-container {
