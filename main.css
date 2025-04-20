@@ -273,13 +273,6 @@ aside {
   height: 100%;
 }
 
-.sponsors-container ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-}
-
 .main-content-layout,
 footer {
   max-width: 1240px;
@@ -713,14 +706,6 @@ input[type=radio]:checked + label::after {
 
 button[type=submit] {
   width: 70%;
-}
-
-.outreach-options-container,
-.option-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
 }
 
 .outreach-options-container {

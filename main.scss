@@ -97,9 +97,6 @@ aside {
 .section-3-hero-container img {
   height: 100%;
 }
-.sponsors-container ul {
-  @include flex();
-}
 .main-content-layout,
 footer {
   @include mainContentLayout();
@@ -435,10 +432,7 @@ input[type="radio"]:checked + label::after {
 button[type="submit"] {
   width: 70%;
 }
-.outreach-options-container,
-.option-container {
-  @include flex();
-}
+
 .outreach-options-container {
   gap: 35px;
 }
