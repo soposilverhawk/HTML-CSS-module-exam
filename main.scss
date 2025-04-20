@@ -433,6 +433,11 @@ button[type="submit"] {
   width: 70%;
 }
 
+.outreach-options-container,
+.option-container {
+  @include flex();
+}
+
 .outreach-options-container {
   gap: 35px;
 }

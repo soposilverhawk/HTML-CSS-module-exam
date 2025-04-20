@@ -708,6 +708,14 @@ button[type=submit] {
   width: 70%;
 }
 
+.outreach-options-container,
+.option-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
 .outreach-options-container {
   gap: 35px;
 }
